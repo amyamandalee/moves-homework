@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.mu-body {
+  width: 100%;
+}
+
+.mu-page {
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid blue; */
+  padding: 5px;
+  /* margin: 5px; */
+}
+.mu-container {
+  height: 100%;
+  border: 5px solid black;
+  width: 24%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin-right: 2px;
+}
+.mu-container-center {
+  height: 100%;
+  border: 5px solid black;
+  width: 24%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin-right: 2px;
+}
+.mu-box {
+  width: 100%;
+  height: 33.3%;
+  background-color: black;
+  border-bottom: 5px solid black;
+}
+
+.mu-box:hover {
+  background-color: yellow;
+}
+
+.mu-container--wide {
+  width: 51%;
+  /* position: absolute; */
+  /* right: 0px; */
+}
+.mu-container--green {
+  background-color: navy;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: ;
+  width: 100%;
+}
+
+.mu-box:hover {
+  animation: grow-long 2s forwards;
+}
+
+.mu-container-center:hover {
+  background-color: blue;
+  animation: grow-wide 2s forwards;
+}
+
+.mu-container:hover {
+  background-color: red;
+}
+
+@keyframes grow-long {
+  0% {
+    height: 33.3%;
+  }
+  100% {
+    height: 66.6%;
+  }
+}
+
+@keyframes grow-wide {
+  0% {
+    width: 33.3%;
+  }
+  100% {
+    width: 66.6%;
+  }
+}
